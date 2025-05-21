@@ -479,7 +479,19 @@ MonoBehaviour:
     m_ActionId: 0e8dae67-11b2-4ffc-ae12-e5895490130d
     m_ActionName: Player/Jump[/Keyboard/space]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032323420}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: OnLook
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 9b0804ba-6c41-4bbc-866f-7fad607a4fd9
     m_ActionName: Player/Look[/Mouse/delta]
   m_NeverAutoSwitchControlSchemes: 0
@@ -543,6 +555,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 0
+  cameraContainer: {fileID: 944964171}
+  minXLook: -85
+  maxXLook: 85
+  lookSensitivity: 0.05
 --- !u!114 &2032323421
 MonoBehaviour:
   m_ObjectHideFlags: 0
