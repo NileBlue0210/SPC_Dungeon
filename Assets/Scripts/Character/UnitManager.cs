@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 /// <summary>
@@ -22,7 +20,7 @@ public class UnitManager : MonoBehaviour
         }
     }
 
-    private Player _player;
+    public Player _player;
     public Player Player { get { return _player; } set {  _player = value; } }
 
     private void Awake()
