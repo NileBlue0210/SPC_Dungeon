@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -8,6 +9,9 @@ public class Player : MonoBehaviour
 {
     public PlayerController _playerController;
     public PlayerCondition _playerCondition;
+
+    public ItemData itemData;
+    public Action addItem;
 
     private void Awake()
     {
