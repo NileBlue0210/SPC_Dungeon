@@ -6,8 +6,8 @@ using UnityEngine;
 /// </summary>
 public class Player : MonoBehaviour
 {
-    private PlayerController _playerController;
-    private PlayerCondition _playerCondition;
+    public PlayerController _playerController;
+    public PlayerCondition _playerCondition;
 
     private void Awake()
     {
