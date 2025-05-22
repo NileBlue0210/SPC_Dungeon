@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour
     [Header("Interaction")]
     public LayerMask groundLayerMask;
 
-    private Rigidbody _rb;
+    public Rigidbody _rb;
 
     void Awake()
     {
