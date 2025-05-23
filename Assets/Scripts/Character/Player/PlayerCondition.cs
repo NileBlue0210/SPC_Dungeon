@@ -16,6 +16,7 @@ public class PlayerCondition : MonoBehaviour, IDamageable
     Condition stamina { get { return uiCondition.stamina; } }
 
     public event Action onTakeDamage;
+    public event Action onTakeBoost;
 
     void Update()
     {
@@ -43,5 +44,10 @@ public class PlayerCondition : MonoBehaviour, IDamageable
         health.Subtract(amount);
 
         onTakeDamage.Invoke();
+    }
+
+    public void Boost()
+    {
+        onTakeBoost?.Invoke();
     }
 }

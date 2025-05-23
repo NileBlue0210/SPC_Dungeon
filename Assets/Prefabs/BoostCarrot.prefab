@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3601993914144969311}
   - component: {fileID: 5063355164302283722}
   - component: {fileID: 2600951953824511731}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Carrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,8 +94,8 @@ GameObject:
   - component: {fileID: 3748078460203121914}
   - component: {fileID: 4946575856323059122}
   - component: {fileID: 2940247744781641393}
-  - component: {fileID: 85989328801527311}
-  m_Layer: 0
+  - component: {fileID: 25401824204253979}
+  m_Layer: 7
   m_Name: BoostCarrot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 15, y: 0.8, z: 3}
-  m_LocalScale: {x: 3, y: 2, z: 3}
+  m_LocalScale: {x: 4, y: 3, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3601993914144969311}
@@ -148,7 +148,7 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4970989848755135003, guid: 539003eed0bf20a4faf58b92584a662b, type: 3}
---- !u!114 &85989328801527311
+--- !u!114 &25401824204253979
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 761815733794269924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cfa886af4661e264c97f5370a4aed76a, type: 3}
+  m_Script: {fileID: 11500000, guid: 44f6126a7af16da4086286e1788b665c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   data: {fileID: 11400000, guid: 9d2d14d07ebf7294c89da725ea34f2f4, type: 2}
+  AddSpeedRate: 3
+  AddJumpForceRate: 2
+  boostAmount: 10

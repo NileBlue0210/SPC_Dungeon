@@ -19,14 +19,14 @@ public class ItemObject : MonoBehaviour, IInteractable
         return itemInfo;
     }
 
-    public void OnInteract()
+    public virtual void OnInteract()
     {
         if (data.type != ItemType.Object)
         {
             UnitManager.Instance.Player.itemData = data;
             UnitManager.Instance.Player.addItem?.Invoke();
 
-            Destroy(gameObject);
+            // Destroy(gameObject);
         }
     }
 }

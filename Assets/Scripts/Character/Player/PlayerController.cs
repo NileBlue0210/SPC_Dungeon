@@ -9,11 +9,11 @@ using UnityEngine.InputSystem;
 public class PlayerController : MonoBehaviour
 {
     [Header("Movement")]
-    [SerializeField] private float moveSpeed;
+    public float moveSpeed;
     private Vector2 curMoveInput;
 
     [Header("Jump")]
-    [SerializeField] private float jumpForce;
+    public float jumpForce;
 
 
     [Header("Sight")]
