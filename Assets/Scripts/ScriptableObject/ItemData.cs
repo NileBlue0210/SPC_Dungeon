@@ -15,7 +15,8 @@ public enum ConsumableType
 {
     None,
     Health,
-    Stamina
+    Stamina,
+    Status   // to do: 속도와 점프력을 동시에 올려주려면 어떻게 해야 할까?
 }
 
 [Serializable]
